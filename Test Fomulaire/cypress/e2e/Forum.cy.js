@@ -4,7 +4,7 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 Given('Je visite l\'URL du formulaire', () => {
-  cy.visit('C:\Users\Amoun Kh\Desktop\Test Fomulaire\ceWeekEnd.html'); // Assurez-vous de remplacer le chemin par le chemin réel
+  cy.visit('C:\Users\Amoun Kh\Desktop\Test Fomulaire\ceWeekEnd.html'); 
 });
 
 When('Je remplis le formulaire avec des données de test', () => {
@@ -14,7 +14,7 @@ When('Je remplis le formulaire avec des données de test', () => {
 
       cy.get('#nom').type(user.lastName);
       cy.get('#prenom').type(user.firstName);
-      cy.get('#ville').type('Lille'); // Vous avez spécifié que la ville est Lille
+      cy.get('#ville').type('Lille'); 
       cy.get('#email').type(user.email);
       cy.get('#telephone').type(user.phone);
       cy.get('form').submit();
