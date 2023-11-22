@@ -8,7 +8,7 @@ Given('Je visite l\'URL du formulaire', () => {
 });
 
 When('Je remplis le formulaire avec des données de test', () => {
-  cy.request('GET', 'https://dummyapi.io')
+  cy.request('GET', 'https://dummyapi.io/account')
     .then((response) => {
       const user = response.body.data[0];
 
